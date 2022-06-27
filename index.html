@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de gastos</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="rowmy-5">
+            <div class="col-md-12">
+                <div class="card-columns">
+                    <div class="card my-4">
+                        <div id="tarjeta">
+                            <h1>App Gastos</h1>
+                            <h5>Ingresá cuanto gastó cada uno</h5>
+                            
+                        </div>
+                    <form  id="form" class="mx-5" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" name="Nombre" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="monto">Monto</label>
+                            <input id="monto" type="number" name="monto" class="form-control" placeholder="Monto" required>
+                        </div>
+                        <div id="btn" class="form-group my-2">
+                            <button type="button" onclick="funcion(event)" class="btn btn-primary">Agregar</button>
+                        </div>
+                        <div id="refresh" class="form-group my-2">
+                            <button type="button" class="btn btn-secondary">Reiniciar</button>
+                        </div>
+                        
+                    </form>
+                    <div id="lista" class="mx-5">
+                    </div>
+                    <p id="total" class="mx-5"></p>
+                    <p id="cada" class="mx-5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='main.js'></script>
+</html>
